@@ -1,0 +1,15 @@
+-- 1. kadaidb データベースを作成するSQL文
+
+CREATE DATABASE kadaidb;
+
+-- 2. kadaidbを選択するSQL文
+
+USE kadaidb;
+
+-- 3. person テーブルを作成するSQL文
+
+source ~/environment/create_table_kadaidb_person.sql
+
+-- 4. データを1件保存するSQL文
+
+INSERT INTO person (name,age) VALUES ("ちなつ",26); 
