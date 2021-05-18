@@ -2,33 +2,28 @@
 
    $max = 100;
    
-//   function fizzbuzz($num) {
+  function fizzbuzz($num) {
        
-//       if($num > 1)
-//          fizzbuzz($num - 1);
        
-//   }
-
-   for($num = 1; $num <= 100; $num++){
-
-       if ($num % 15 == 0){
-           echo "FizzBuzz", PHP_EOL;
+       if ($num % 15 == 0) {
+        return 'FizzBuzz'. PHP_EOL;
        }
 
        elseif ($num % 5 == 0){
-           echo "Buzz", PHP_EOL;
+           return "Buzz" . PHP_EOL;
        }
        
        elseif ($num % 3 == 0){
-           echo "Fizz", PHP_EOL;
+           return "Fizz" . PHP_EOL;
        }
        
        else {
-           echo $num, PHP_EOL;
+           return $num . PHP_EOL;
        }
-   
-   print $num . PHP_EOL;
-   
+  }
+  
+   for($num = 1; $num <= $max; $num++){ 
+   print fizzbuzz($num) . PHP_EOL;
    }
 
 
