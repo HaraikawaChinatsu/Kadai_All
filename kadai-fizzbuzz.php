@@ -23,7 +23,7 @@
   }
   
    for($num = 1; $num <= $max; $num++){ 
-   print fizzbuzz($num) . PHP_EOL;
+   print fizzbuzz($num);
    }
 
 
