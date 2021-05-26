@@ -105,7 +105,6 @@
                 <p>
                     プライバシーポリシーをご確認いただき、ご同意の上で、送信ボタンをクリックしてください。<br />
                     お問い合わせの内容は、受付日から3営業日以内をめどにご返信いたします。
-                <!--<form action="complete.html">-->
                 <form action="complete.php" method="POST">
                     <div class="form-group">
                      <div class="row">
@@ -166,9 +165,9 @@
 
                     <div class="form-group">
                       <div class="row">
-                       <div class="offset-ms-3 col-sm-9"> 
+                       <div class="offset-ms-3 col-sm-12"> 
                             <button type="submit" class="btn btn-success btn-block">お問い合わせ内容を送信する</button>
-                        </div>
+                    　 </div>
                       </div>
                    </div>
                 </form>

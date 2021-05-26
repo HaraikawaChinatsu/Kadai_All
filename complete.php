@@ -42,8 +42,11 @@
                             <label class="col-form-label">会社名：</label>
                         </div>
                         <div class="col-sm-9">
-                            <p><?php echo nl2br(htmlspecialchars($_POST['company'])); ?></p>
-                            <!--<input type="text" class="form-control" name="company" required>-->
+                            <p> <?php 
+                              if (array_key_exists('company', $_POST)) {
+                                  $company = $_POST['company'];
+                              } ?>
+                               <?php echo htmlspecialchars($company, ENT_QUOTES, "UTF-8"); ?></p>
                         </div>
                       </div>
                     </div>
@@ -56,8 +59,11 @@
                        </div>
                       
                       <div class="col-sm-9">
-                          <!--<input type="text" class="form-control" name="name" required>-->
-                          <p><?php echo nl2br(htmlspecialchars($_POST['name'])); ?></p>
+                          <p> <?php 
+                              if (array_key_exists('name', $_POST)) {
+                                  $name = $_POST['name'];
+                              } ?>
+                              <?php echo htmlspecialchars($name, ENT_QUOTES, "UTF-8"); ?></p>
                       </div>
                      </div>
                     </div>
@@ -68,8 +74,11 @@
                         <label class="col-form-label">メール：</label>
                        </div>
                         <div class="col-sm-9">
-                            <!--<input type="text" class="form-control" name="mail" required>-->
-                             <p><?php echo nl2br(htmlspecialchars($_POST['mail'])); ?></p>
+                             <p> <?php 
+                              if (array_key_exists('mail', $_POST)) {
+                                  $mail = $_POST['mail'];
+                              } ?>
+                                <?php echo htmlspecialchars($mail, ENT_QUOTES, "UTF-8"); ?></p>
                         </div>
                        </div>
                     </div>
@@ -80,8 +89,11 @@
                         <label class="col-form-label">電話番号：</label>
                        </div>
                        <div class="col-sm-9">
-                         <!--<input type="text" class="form-control" name="tel" required>-->
-                          <p><?php echo nl2br(htmlspecialchars($_POST['tel'])); ?></p>
+                          <p> <?php 
+                              if (array_key_exists('tel', $_POST)) {
+                                  $tel = $_POST['tel'];
+                              } ?>
+                             <?php echo htmlspecialchars($tel, ENT_QUOTES, "UTF-8"); ?></p>
                        </div>
                       </div>
                     </div>
@@ -92,8 +104,11 @@
                         <label class="col-form-label">内容：</label>
                        </div>
                        <div class="col-sm-9">
-                            <!--<textarea class="form-control" name="content" required></textarea>-->
-                             <p><?php echo nl2br(htmlspecialchars($_POST['content'])); ?></p>
+                          <p> <?php 
+                              if (array_key_exists('content', $_POST)) {
+                                  $content = $_POST['content'];
+                              } ?>
+                                <?php echo nl2br(htmlspecialchars($content)); ?></p>
                        </div>
                       </div>
                     </div>
@@ -104,7 +119,7 @@
         
         
         <div class="text-center mb-4">
-            <a href="contact.html" class="btn btn-success">戻る</a>
+            <a href="contact.php" class="btn btn-success">戻る</a>
         </div>
     </div>
     <footer class="text-center pt-3 border-top">
